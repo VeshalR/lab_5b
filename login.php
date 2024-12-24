@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Collect the form data
     $matric = $_POST['matric'];
@@ -42,12 +40,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             header("Location: display_users.php");
             exit();
         } else {
-            // Invalid password
-            echo "Invalid password.";
+            // Invalid password, set error message to display
+            $error_message = "<p>Invalid password, try <a href='login.php'>login again</a>.</p>";
         }
     } else {
         // User not found
-        echo "User not found.";
+        $error_message = "<p>User not found.</p>";
     }
 
     // Close the statement and connection
@@ -74,7 +72,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="password" name="password" id="password" required>
         <br>
         <button type="submit">Login</button>
+        <br>
+        <p>
+        <a href="registration.html">Register</a> here if you have not.
+        </p>
+        <!-- Display error message if set -->
+        <?php if (isset($error_message)) echo $error_message; ?>
     </form>
 </body>
 </html>
-

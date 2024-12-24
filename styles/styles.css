@@ -59,18 +59,3 @@ form p {
     text-align: center;
 }
 
-a {
-    display: inline-block;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #f44336;
-    border-radius: 4px;
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-a:hover {
-    background-color: #d32f2f;
-}

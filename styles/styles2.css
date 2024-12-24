@@ -1,0 +1,76 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header style */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+/* Table style */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+/* Table Header style */
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Table row and cell style */
+td {
+    background-color: #ffffff;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table row hover effect */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Hover effect for links */
+a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Add padding around the table */
+table {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/* Confirm message before delete */
+a:active {
+    transform: scale(0.98);
+}
